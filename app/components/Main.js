@@ -1,8 +1,9 @@
 import React from "react";
 
 // Import sub-components
-import Form from "./children/Form";
+import Search from "./children/Search";
 import Results from "./children/Results";
+import Saved from "./children/Saved";
 
 // Helper Function
 import helpers from "./utils/helpers";
@@ -49,21 +50,27 @@ class Main extends React.Component {
       <div className="container">
         <div className="row">
           <div className="jumbotron">
-            <h2 className="text-center">Address Finder!</h2>
+            <h2 className="text-center">New York Times Article Scrubber</h2>
             <p className="text-center">
-              <em>Enter a landmark to search for its exact address (ex: "Eiffel Tower").</em>
+              <em>Search for and annotate articles of interest</em>
             </p>
           </div>
 
           <div className="col-md-6">
 
-            <Form setTerm={this.setTerm} />
+            <Search />
 
           </div>
 
           <div className="col-md-6">
 
-            <Results address={this.state.results} />
+            <Results />
+
+          </div>
+
+          <div className="col-md-6">
+
+            <Saved />
 
           </div>
 

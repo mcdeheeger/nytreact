@@ -32,15 +32,13 @@ class Form extends React.Component {
 
       <div className="panel panel-default">
         <div className="panel-heading">
-          <h3 className="panel-title text-center">Query</h3>
+          <h3 className="panel-title text-center"><strong>Search</strong></h3>
         </div>
         <div className="panel-body text-center">
 
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <h4 className="">
-                <strong>Location</strong>
-              </h4>
+              <h4 className="topic">Topic</h4>
 
               {/*
                 Note how each of the form elements has an id that matches the state.
@@ -54,6 +52,40 @@ class Form extends React.Component {
                 value={this.state.term}
                 onChange={this.handleChange}
                 required
+              />
+              <br />
+
+              <h4 className="startYear">Start Year</h4>
+
+                {/*
+                 Note how each of the form elements has an id that matches the state.
+                 This is not necessary but it is convenient.
+                 Also note how each has an onChange event associated with our handleChange event.
+                 */}
+              <input
+                  type="text"
+                  className="form-control text-center"
+                  id="term"
+                  value={this.state.term}
+                  onChange={this.handleChange}
+                  required
+              />
+              <br />
+
+              <h4 className="endYear">End Year</h4>
+
+                {/*
+                 Note how each of the form elements has an id that matches the state.
+                 This is not necessary but it is convenient.
+                 Also note how each has an onChange event associated with our handleChange event.
+                 */}
+              <input
+                  type="text"
+                  className="form-control text-center"
+                  id="term"
+                  value={this.state.term}
+                  onChange={this.handleChange}
+                  required
               />
               <br />
 
