@@ -8,7 +8,7 @@
     "start": "npm run build",
     "build": "webpack -w"
   },
-  "keywords":[
+  "keywords": [
     "example",
     "heroku"
   ],
@@ -17,13 +17,14 @@
   "dependencies": {
     "axios": "^0.12.0",
     "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.3",
     "geocoder": "^0.2.2",
     "mongoose": "^4.11.0",
     "morgan": "^1.8.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "request": "^2.72.0",
+    "request": "^2.81.0",
     "weather-js": "^1.0.2"
   },
   "devDependencies": {
